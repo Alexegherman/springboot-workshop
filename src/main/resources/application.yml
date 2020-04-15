@@ -1,0 +1,45 @@
+application:
+  name: springboot-workshop
+  version: 1.0.0-SNAPSHOT
+
+server:
+  port: 11433
+
+spring:
+  #  thymeleaf:
+  #    cache: false
+  #    check-template: true
+  #    check-template-location: true
+  #    content-type: text/html
+  #    enabled: true
+  #    encoding: UTF-8
+  #    mode: HTML
+  #    prefix: classpath:/template/
+  #    suffix: .html
+  datasource:
+    url: jdbc:h2:mem:training
+    #url: jdbc:h2:file:C:/data/training
+    driverClassName: org.h2.Driver
+    username: sa
+    password: pa
+  h2:
+    console:
+      enabled: true
+#  jpa:
+#    propoerties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.H2Dialect
+
+db:
+  default:
+    driver: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password: postgres
+    pool:
+      size: 10
+
+
+
+
+

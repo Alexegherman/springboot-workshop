@@ -1,0 +1,11 @@
+${AnsiColor.BRIGHT_BLUE} ,---.                   ,--.                    ,--.                      ,--.                                           ,--.             ,--.
+${AnsiColor.BRIGHT_BLUE}'   .-'   ,---.  ,--.--. `--' ,--,--,   ,---.    |  |-.   ,---.   ,---.  ,-'  '-.   ,-----.   ,--.   ,--.  ,---.  ,--.--. |  |,-.   ,---.  |  ,---.   ,---.   ,---.
+${AnsiColor.BRIGHT_BLUE}`.  `-.  | .-. | |  .--' ,--. |      \ | .-. |   | .-. ' | .-. | | .-. | '-.  .-'   '-----'   |  |.'.|  | | .-. | |  .--' |     /  (  .-'  |  .-.  | | .-. | | .-. |
+${AnsiColor.BRIGHT_BLUE}.-'    | | '-' ' |  |    |  | |  ||  | ' '-' '   | `-' | ' '-' ' ' '-' '   |  |               |   .'.   | ' '-' ' |  |    |  \  \  .-'  `) |  | |  | ' '-' ' | '-' '
+${AnsiColor.BRIGHT_BLUE}`-----'  |  |-'  `--'    `--' `--''--' .`-  /     `---'   `---'   `---'    `--'               '--'   '--'  `---'  `--'    `--'`--' `----'  `--' `--'  `---'  |  |-'
+${AnsiColor.BRIGHT_BLUE}         `--'                          `---'                                                                                                                 `--'
+
+
+${AnsiColor.BRIGHT_BLUE} :: Spring boot workshop 🤓  :: Running on Spring Boot ${spring-boot.version} :: ${AnsiColor.BRIGHT_BLUE}
+
+${AnsiColor.RED} Application name: ${application.name} and version: ${application.version} ${AnsiColor.RED}
