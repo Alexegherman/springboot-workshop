@@ -1,7 +1,6 @@
 package eu.accesa.training.db;
 
 import eu.accesa.training.model.Book;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

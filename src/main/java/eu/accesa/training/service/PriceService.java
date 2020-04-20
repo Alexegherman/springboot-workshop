@@ -6,7 +6,6 @@ import eu.accesa.training.model.Price;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletResponse;
@@ -27,7 +26,7 @@ public class PriceService {
     }
 
     //@Scheduled(initialDelay = 10000, fixedDelay = 10000)
-    public void testAddPrice() {
+    public void addPrice() {
         Price price = new Price();
         price.setOutletId(9999);
         price.setCurrency("EUR");

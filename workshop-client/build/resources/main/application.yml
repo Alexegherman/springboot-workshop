@@ -1,0 +1,6 @@
+application:
+  name: workshop-client
+  version: 1.0.0-SNAPSHOT
+
+server:
+  port: 11434
