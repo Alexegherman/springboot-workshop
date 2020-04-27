@@ -3,7 +3,7 @@ application:
   version: 1.0.0-SNAPSHOT
 
 server:
-  port: 11433
+  port: 11434
 
 spring:
   #  thymeleaf:

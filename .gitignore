@@ -27,4 +27,3 @@ generated/
 /dist/
 /nbdist/
 /.nb-gradle/
-kafka_plain_jaas_client.conf

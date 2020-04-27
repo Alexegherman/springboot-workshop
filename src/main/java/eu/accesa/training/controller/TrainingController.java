@@ -8,12 +8,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/ceva")
 public class TrainingController {
 
     @RequestMapping(path = "/training", method= RequestMethod.GET)
     public String publicTraining() {
         return "training";
+    }
+
+    @RequestMapping(path = "/login", method= RequestMethod.GET)
+    public String login() {
+        return "login";
     }
 
     @GetMapping("/hi")
