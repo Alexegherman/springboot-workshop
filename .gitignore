@@ -3,6 +3,7 @@
 !gradle/wrapper/gradle-wrapper.jar
 *.log
 generated/
+/workshop-client/build/
 
 ### STS ###
 .apt_generated
