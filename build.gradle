@@ -47,13 +47,15 @@ allprojects {
         implementation(group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: myBatisVersion)
         //s3
         implementation(group: 'org.postgresql', name: 'postgresql', version: postgresqlVersion) //s3
-        implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: springBootVersion)
-        //s3
+        implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: springBootVersion)//s3
 
         implementation(group: 'io.springfox', name: 'springfox-swagger2', version: swaggerVersion) //s4
         implementation(group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion) //s4
 
         implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: springBootVersion) //s5
+
+        implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: springBootVersion) //s6
+        implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: springBootVersion) //s6
 
         testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion)
     }

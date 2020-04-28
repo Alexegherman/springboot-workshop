@@ -1,5 +1,6 @@
 package eu.accesa.training.service;
 
+import eu.accesa.training.aop.LogExecutionTime;
 import eu.accesa.training.db.PriceHandler;
 import eu.accesa.training.db.PriceMapper;
 import eu.accesa.training.model.Price;
@@ -38,10 +39,12 @@ public class PriceService {
         priceMapper.insertPrice(price);
     }
 
+    @LogExecutionTime
     public List<Price> getAllPrices() {
         return priceMapper.getPrices();
     }
 
+    @LogExecutionTime
     public void streamPrices(HttpServletResponse response) {
         PriceHandler handler = new PriceHandler(response);
         priceMapper.getPricesStream(handler);
