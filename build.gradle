@@ -30,7 +30,6 @@ allprojects {
 
     dependencies {
 
-        implementation(group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: springBootVersion)
         //s1
         implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion)
         //s2
@@ -56,6 +55,10 @@ allprojects {
 
         implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: springBootVersion) //s6
         implementation(group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: springBootVersion) //s6
+
+        implementation(group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-all', version: '2.1.1.RELEASE') //s7
+        implementation(group: 'org.springframework.cloud', name: 'spring-cloud-starter-consul-config', version: '2.1.1.RELEASE') //s7
+
 
         testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion)
     }

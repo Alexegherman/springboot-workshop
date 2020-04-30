@@ -3,4 +3,18 @@ application:
   version: 1.0.0-SNAPSHOT
 
 server:
-  port: 11434
+  port: 11433
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        serviceName: ${spring.application.name}-dev
+        host: localhost
+        port: ${server.port}
+        tags:
+          - workshop
+          - spring
+          - accesa
+        healthCheckUrl: http://localhost:${server.port}/actuator/health
+        healthCheckInterval: 5s
