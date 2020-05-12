@@ -38,7 +38,7 @@ public class PriceClient {
     }
 
     private Optional<URI> serviceUrl() {
-        return discoveryClient.getInstances("spring-workshop-dev")
+        return discoveryClient.getInstances("workshop-server-dev")
                 .stream()
                 .findFirst()
                 .map(ServiceInstance::getUri);

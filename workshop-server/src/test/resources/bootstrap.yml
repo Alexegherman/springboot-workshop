@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: workshop-server
+  profiles:
+    active: dev
+
+  cloud:
+    consul:
+      enabled: false

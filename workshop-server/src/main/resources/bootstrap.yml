@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: workshop-server
+  profiles:
+    active: dev
+
+  cloud:
+    consul:
+      enabled: true
+      host: consul
+      port: 8500
+    config:
+      enabled: true

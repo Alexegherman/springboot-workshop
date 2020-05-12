@@ -1,0 +1,52 @@
+version: "3.1"
+services:
+  postgres:
+    image: library/postgres:latest
+    container_name: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+    - 5432
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    networks:
+      - mynetwork
+  consul:
+    image: consul:latest
+    ports:
+      - "8300:8300"
+      - "8500:8500"
+      - "8400:8400"
+      - "8600:8600"
+    networks:
+      - mynetwork
+  workshop-server:
+    image: workshop-server
+    depends_on:
+      - postgres
+    links:
+      - "consul"
+      - "postgres"
+    ports:
+      - "11434:11434"
+    networks:
+      - mynetwork
+  workshop-client:
+    image: workshop-client
+    links:
+      - "consul"
+    ports:
+      - "11433:11433"
+    networks:
+      - mynetwork
+
+volumes:
+  postgres-data:
+
+networks:
+  mynetwork:
+    driver: bridge

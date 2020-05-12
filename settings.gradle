@@ -1,2 +1,5 @@
+rootProject.name = 'springboot-workshop'
+
 include 'workshop-client'
+include 'workshop-server'
 
